@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    
+     background-color: #BBF5FF;
+}
+
+p{
+    margin: 10px;
+}
+
+
+table{
+    
+    border-collapse: collapse;
+    border: black 1px solid;
+    margin: 10px;
+    background-color: #0194B6;
+}
+
+table tr, th, td{
+    
+    text-align: center;
+    border: black 1px solid;
+    padding: 5px;
+    
+}
+
+table td{
+    
+    background-color: #84E8FF;
+    
+}
+
+ul{
+    text-align: center;
+    
+}
+

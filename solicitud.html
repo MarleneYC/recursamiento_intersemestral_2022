@@ -1,0 +1,157 @@
+<html lang="es">
+<head>
+    <meta charset="uft-8">
+    <link href="style_solicitud.css" type="text/css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    
+</head>
+<body> 
+
+    <br><br>
+    
+    <form method="post" action="" onsubmit="mensaje()" >
+        <ul>
+            <li>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre_alumno" required>
+            </li>
+            <br>
+            <li>
+                <label for="ncontrol">Número de control:</label>
+                <input type="text" id="ncontrol" name="ncontrol_alumno" maxlength="14" required>
+            </li>
+            <br>
+            <li>
+                <label for="correo"> Correo electrónico: </label>
+                <input type="email" id="correo" name="correo_alumno" required>
+            </li>
+            <br>
+            <li>
+                <label for="materia"> Materia o submódulo a solicitar: </label><br>
+                <select required> 
+                    <option disabled selected value=""> Escoge una opción</option>
+                    <option value="1"> ALGEBRA </option>
+                    <option value="2"> LEOYE I </option> 
+                    <option value="3"> TICS </option>
+                    <option value="4"> LÓGICA </option> 
+                    <option value="5"> INGLÉS I </option> 
+                    <option value="6"> QUÍMICA I </option> 
+                    <option value="7"> GEOMETRÍA ANALÍTICA </option> 
+                    <option value="8"> INGLÉS III </option> 
+                    <option value="9"> ÉTICA </option> 
+                    <option value="10"> BIOLOGÍA </option> 
+                    <option value="11"> CÁLCULO DIFERENCIAL </option> 
+                    <option value="12"> INGLÉS V </option> 
+                    <option value="13"> FÍSICA II </option> 
+                    <option value="14"> CTSYV </option>
+                    <option value="15"> Supervisa los procesos constructivos de trabajos preliminares y de obra negra </option>
+                    <option value="16"> Supervisa los procesos de acabados de casa habitación </option> 
+                    <option value="17"> Mantiene los generados de CA y CC </option> 
+                    <option value="18"> Mantiene los motores de CA y CC </option> 
+                    <option value="19"> Identifica microorganismos con base en técnicas bacteriológicas </option> 
+                    <option value="20"> Identifica microorganismos con base en técnicas parasitológicas </option> 
+                    <option value="21"> Aplica la metodología espiral con programación orientada a objetos </option> 
+                    <option value="22"> Aplica la metodología de desarrollo rápido con programación orientada a eventos </option> 
+                    <option value="23"> Contribuye a la integración y desarrollo del personal en la organización  </option> 
+                    <option value="24"> Realiza el proceso de admisión y empleo  </option> 
+                    <option value="25"> Mide el proceso de producción </option> 
+                    <option value="26"> Mejora estaciones de trabajo </option> 
+                    <option value="27"> Optimiza el método de trabajo </option> 
+                    <option value="28"> Realiza mantenimiento preventivo </option> 
+                    <option value="29"> Realiza mantenimiento correctivo </option> 
+                    <option value="30"> Realiza trazo y levantamiento topógráfico con equipo convencional </option> 
+                    <option value="31"> Cuantifica volúmenes de una obra </option> 
+                    <option value="32"> Diseña y mantiene los sistemas de iluminación </option> 
+                    <option value="33"> Realiza mantenimiento a las instalaciones eléctricas residenciales, comerciales e industriales </option> 
+                    <option value="34"> Implementa y mantiene los sistemas de energía renovable </option> 
+                    <option value="35"> Realiza ánalisis hematológicos de serie blanca y hemostasia  </option> 
+                    <option value="36"> Analiza y fracciona sangre con fines transfuncionales </option> 
+                    <option value="37"> Construye bases de datos para aplicaciones web </option> 
+                    <option value="38"> Desarrolla aplicaciones web con conexión a bases de datos </option> 
+                    <option value="39"> Supervisa el cumplimiento de las medidas de higiene y seguridad en la organización </option> 
+                    <option value="40"> Supervisa el cumplimiento de tareas y procesos para evaluar la productividad en la organización </option> 
+                    <option value="41"> Asegura la calidad del proceso y del producto </option> 
+                    <option value="42"> Mide estándares de calidad </option> 
+                    <option value="43"> Mejora los procesos aplicando las herramientas de calidad </option> 
+                    <option value="44"> Clasifica los elementos básicos de la red LAN </option> 
+                    <option value="45"> Diseña la red LAN </option> 
+                </select>
+            </li>
+            <br>
+            <li>
+                <label for="materia"> Materia o submódulo a solicitar (opcional): </label><br>
+                <select> 
+                    <option disabled selected value=""> Escoge una opción</option>
+                    <option value="1"> ALGEBRA </option>
+                    <option value="2"> LEOYE I </option> 
+                    <option value="3"> TICS </option>
+                    <option value="4"> LÓGICA </option> 
+                    <option value="5"> INGLÉS I </option> 
+                    <option value="6"> QUÍMICA I </option> 
+                    <option value="7"> GEOMETRÍA ANALÍTICA </option> 
+                    <option value="8"> INGLÉS III </option> 
+                    <option value="9"> ÉTICA </option> 
+                    <option value="10"> BIOLOGÍA </option> 
+                    <option value="11"> CÁLCULO DIFERENCIAL </option> 
+                    <option value="12"> INGLÉS V </option> 
+                    <option value="13"> FÍSICA II </option> 
+                    <option value="14"> CTSYV </option>
+                    <option value="15"> Supervisa los procesos constructivos de trabajos preliminares y de obra negra </option>
+                    <option value="16"> Supervisa los procesos de acabados de casa habitación </option> 
+                    <option value="17"> Mantiene los generados de CA y CC </option> 
+                    <option value="18"> Mantiene los motores de CA y CC </option> 
+                    <option value="19"> Identifica microorganismos con base en técnicas bacteriológicas </option> 
+                    <option value="20"> Identifica microorganismos con base en técnicas parasitológicas </option> 
+                    <option value="21"> Aplica la metodología espiral con programación orientada a objetos </option> 
+                    <option value="22"> Aplica la metodología de desarrollo rápido con programación orientada a eventos </option> 
+                    <option value="23"> Contribuye a la integración y desarrollo del personal en la organización  </option> 
+                    <option value="24"> Realiza el proceso de admisión y empleo  </option> 
+                    <option value="25"> Mide el proceso de producción </option> 
+                    <option value="26"> Mejora estaciones de trabajo </option> 
+                    <option value="27"> Optimiza el método de trabajo </option> 
+                    <option value="28"> Realiza mantenimiento preventivo </option> 
+                    <option value="29"> Realiza mantenimiento correctivo </option> 
+                    <option value="30"> Realiza trazo y levantamiento topógráfico con equipo convencional </option> 
+                    <option value="31"> Cuantifica volúmenes de una obra </option> 
+                    <option value="32"> Diseña y mantiene los sistemas de iluminación </option> 
+                    <option value="33"> Realiza mantenimiento a las instalaciones eléctricas residenciales, comerciales e industriales </option> 
+                    <option value="34"> Implementa y mantiene los sistemas de energía renovable </option> 
+                    <option value="35"> Realiza ánalisis hematológicos de serie blanca y hemostasia  </option> 
+                    <option value="36"> Analiza y fracciona sangre con fines transfuncionales </option> 
+                    <option value="37"> Construye bases de datos para aplicaciones web </option> 
+                    <option value="38"> Desarrolla aplicaciones web con conexión a bases de datos </option> 
+                    <option value="39"> Supervisa el cumplimiento de las medidas de higiene y seguridad en la organización </option> 
+                    <option value="40"> Supervisa el cumplimiento de tareas y procesos para evaluar la productividad en la organización </option> 
+                    <option value="41"> Asegura la calidad del proceso y del producto </option> 
+                    <option value="42"> Mide estándares de calidad </option> 
+                    <option value="43"> Mejora los procesos aplicando las herramientas de calidad </option> 
+                    <option value="44"> Clasifica los elementos básicos de la red LAN </option> 
+                    <option value="45"> Diseña la red LAN </option> 
+                </select>
+            </li>
+            
+            <script type="text/javascript" >
+                
+                function mensaje (){
+                    
+                    alert("Se ha enviado con éxito tu solicitud!");
+                    
+                }
+                
+                
+            </script>
+            
+            <br>
+            <li>
+                 <input type="submit" name="Enviar" id="boton">
+            </li>
+        </ul>
+        
+    </form>
+    
+</body> 
+</html>  
+

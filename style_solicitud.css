@@ -1,0 +1,39 @@
+*{
+    
+    padding: 0px;
+    margin: 0px;
+    font-family: 'PT Serif', serif;
+    
+}
+
+body{
+    
+    background-color: #84E8FF;
+    
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+}
+
+input {
+    
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    
+}
+
+select{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+#boton{
+    padding: 5px;
+    background-color: black;
+    color: white;
+}
